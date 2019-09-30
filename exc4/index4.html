@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise 4: CSS Manipulation</title>
+  </head>
+  <body>
+    <p id="p1" style="border:2px solid">
+      This is an exercise about changing in a specific color
+    </p>
+    Boarder(00-ff):<br>
+      red value  :<input type="text" id = "bdr_r" value=""><br>
+      green value:<input type="text" id = "bdr_g" value=""><br>
+      blue value :<input type="text" id = "bdr_b" value=""><br>
+      width value(%):<input type="text" id = "bdr_w" value=""><br>
+    Background color(00-ff):<br>
+      red value  :<input type="text" name="" id = "bkgd_r" value=""><br>
+      green value:<input type="text" name="" id = "bkgd_g" value=""><br>
+      blue value :<input type="text" name="" id = "bkgd_b" value=""><br>
+    <button  id="m_btn" onclick="ChangeColor()">Change color</button>
+
+    <script type="text/javascript">
+  function ChangeColor(){
+    //Boarder
+    var bdr_r = document.getElementById('bdr_r').value;
+    var bdr_g = document.getElementById('bdr_g').value;
+    var bdr_b = document.getElementById('bdr_b').value;
+    var bdr_w = document.getElementById('bdr_w').value;
+    //Background color
+    var bkgd_r = document.getElementById('bkgd_r').value;
+    var bkgd_g = document.getElementById('bkgd_g').value;
+    var bkgd_b = document.getElementById('bkgd_b').value;
+    //
+    var x = document.getElementById('p1');
+    x.style.borderColor = "#"+bdr_r+bdr_g+bdr_b;
+    x.style.width = bdr_w + '%' ;
+    document.body.style.backgroundColor = "#"+bkgd_r+bkgd_g+bkgd_b;
+  }
+</script>
+
+  </body>
+</html>

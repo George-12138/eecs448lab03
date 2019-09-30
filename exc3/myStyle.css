@@ -1,0 +1,37 @@
+a
+{
+    background-color: lightgray;
+    color: darkred;
+    font-size: 30pt;
+}
+
+a:hover
+{
+    background-color: lightblue;
+    color: yellow;
+    font-size: 30pt;
+}
+
+body
+{
+  background-color: lightblue;
+  color:pink;
+  background-image: url(E3_gif.gif);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+p
+{
+  background-color: gray;
+  color: darkgreen;
+  font-family: Courier;
+  font-size: 16pt;
+}
+
+p.Christmas
+{
+  color: white;
+  background-color: red;
+}
