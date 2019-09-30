@@ -5,7 +5,7 @@
     <title>Exercise 4: CSS Manipulation</title>
   </head>
   <body>
-    <p id="p1" style="border:2px solid">
+    <p id="p1" style="border:10px solid">
       This is an exercise about changing in a specific color
     </p>
     Boarder(00-ff):<br>
@@ -34,7 +34,7 @@
     var x = document.getElementById('p1');
     x.style.borderColor = "#"+bdr_r+bdr_g+bdr_b;
     x.style.width = bdr_w + '%' ;
-    document.body.style.backgroundColor = "#"+bkgd_r+bkgd_g+bkgd_b;
+    x.style.backgroundColor = "#"+bkgd_r+bkgd_g+bkgd_b;
   }
 </script>
 
